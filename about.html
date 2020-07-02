@@ -7,31 +7,184 @@
 <title>Law Firm Marketing Website-About</title>
 </head>
 <body>
+<style>
+.about_header{
+    background-color: #C67C5C;
+    height: 80px;
+    text-align: center;
+    border: 1px solid #165153;
+    font-size:20px;
+    padding-bottom:5px;
+}
+.about_text_cont {
+    margin: 20px 0px 20px 0px;
+    display: block;
+    overflow: auto;
+}
+.about_text h1{
+    font-size: 21px;
+    color:#165153;
+    padding:10px;
+}
+.about_text{
+    width:49%;
+    border: 1px solid #165153;
+    text-align: left;
+    float:right;
+    min-height: 350px;
+}
+.about_text p{
+    padding: 0px 20px 0px 20px;
+}
+.about_image {
+    float:left;
+    width: 49%;
+    min-height: 350px;
+    background-image: url(/img/aboutlaw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list_review_cont{
+    margin: 20px 0px 20px 0px; 
+    display: block; 
+    overflow: auto;
 
-<div>
+}
+.about_list{
+    width:49%;
+    border: 1px solid #165153;
+    text-align:left;
+    float:left;
+    min-height:600px;
+}
+.about_list ul{
+    padding:10px;
+    margin:10px;
+}
+.about_list h1{
+    font-size:20px;
+    padding:10px;
+}
+.about_review_cont{
+    width:49%;
+    border: 1px solid #165153;
+    text-align:left;
+    float:right;
+    min-height:600px;
+}
+.about_review_image{
+    width:100%;
+    float:left;
+    min-height:300px;
+    background-image:url("/img/office.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.review_container{
+    border:1px solid #C67C5C;
+    width:100%;
+    min-height:300px;
+    float:left;
+}
+.review_container h1{
+    padding:10px;
+}
+.review_container p{
+    padding:10px;
+}
+.review_container button{
+    margin:10px;
+    object-position: bottom;
+}
+.open_button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  object-position: bottom;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.form_popup {
+  display: none;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form_container {
+max-width: 80%;
+padding: 10px;
+background-color: white;
+margin: 10px;
+}
+.form_container input[type=text],{
+  width:100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border:none;
+  background:#f1f1f1;
+}
+.form_container textarea{
+  width: 100%;
+  height:300px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container input[type=text]:focus,{
+  background-color: #ddd;
+  outline: none;
+}
+.form_container .btn {
+  background-color:#165153;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form_container .cancel {
+  background-color:#C67C5C;
+}
+.form_container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+<header>
     <div class="logo"></div>
+    <div class="logo_text">Sonexx Law Firm</div>
     <div class="links">
         <a href="index.html">Home</a>
-        <a>About</a>
-        <a href="services.html">Services</a>
-    </div> 
-</div>
+        <a>About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+</header>
 
 <div class="about_header">
     <h1>About Our Law Firm</h1>
 </div>
 
-<div>
+<div class="about_text_cont">
+    <div class="about_image"></div>
     <div class="about_text">
         <h1>Leaders in Criminal Defense, Federal Civil Rights, Personal Injury & Commercial Litigation Throughout Texas</h1>
         <p>We set ourselves apart from other law firms, both in the scope of our experience and the capabilities of our team. Our Team Comprises of former prosecutors, former judge, former public defenders, and current thought leaders in all aspects of the law, our firm is uniquely equipped to serve our clients and protect their rights. Our attorneys are recognized both nationally and statewide for their expertise.</p>
     </div>
-    <div class="about_image">
-        <img src="/img/aboutlaw.jpg" alt="About Law">
-    </div>
 </div>
-<div>
-    <div class="about_list">
+
+<div  class="list_review_cont">
+<div class="about_list">
         <h1>Our attorneys adhere to a strong core philosophy, as well as a principled and unwavering approach to the practice of law.</h1>
         <ul>
             <li>A Focus on Real Problem Solving
@@ -70,8 +223,47 @@
                 </ul>
             </li>
         </ul>
-    </div>
 </div>
 
-</body>    
+<div class="about_review_cont">
+        <div class="about_review_image"></div>
+        <div class="review_container">
+            <h1>Review</h1>
+            <p>We Appreciate all feedback and we would like for you to submit All Reviews below.You're welcome to submit a review for our firm, see below.</p>
+            <button class="open_button" onclick="openReviewForm()">Open Review Form</button>
+
+            <div class="form_popup" id="myForm">
+            <form action="" class="form_container">
+                <h1>Review Form</h1>
+
+                <label for="email"><b>Subject</b></label>
+                <input type="text" placeholder="Enter Subject" name="subject" required><br>
+
+                <label for="message"><b>Message</b></label>
+                <textarea placeholder="write your review here.."name="message" required>
+                </textarea>
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeReviewForm()">Close/Cancel</button>
+            </form>
+            </div>
+        </div>
+</div>
+</div>
+
+
+
+
+<footer>
+    <div class="footer_links">
+        <a href="index.html">Home</a>
+        <a>About Us</a>
+        <a href="services.html">Our Services</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer_logo"></div>
+    <div class="footer_logo_text">Sonexx Law Firm</div>
+</footer>
+<script src="./js/aboutfile.js"></script>
+</body>
 </html>
