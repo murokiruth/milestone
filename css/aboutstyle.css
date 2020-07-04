@@ -1,0 +1,327 @@
+
+body{
+    font-Family: 'Poppins', Sans-Serif;
+}
+h1{
+    font-family: 'Playfair Display', Serif;
+}
+header{
+    background-color:#165153;
+    height:60px;
+    padding:20px;
+}
+footer{
+    background-color:#165153;
+    height:60px;
+    padding:20px;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    background-image:url("/img/law.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right:20px;
+    position: relative;
+    float: left;
+}
+.logo_text{
+    color:#E1B878;
+    font-Family: 'Abril Fatface', Cursive;
+    font-size: 32px;
+    position: relative;
+    float: left;
+    margin:5px 20px 0px 0px
+}
+
+.links{
+    height:40px;
+    padding:15px 10px 0px 10px;
+    text-align:center;
+    position: relative;
+    float: right;
+    font-size: 18px;
+    color:#E0D6C3;
+}
+.links a{
+    margin-top:8px;
+    padding-right:30px;
+    text-decoration: none ;
+    color:#E0D6C3;
+}
+
+.links a:hover{
+    color:#75ACC0;
+}
+
+
+.footer_logo_text{
+    color:#E1B878;
+    font-Family: 'Abril Fatface', Cursive;
+    font-size: 32px;
+    position: relative;
+    float: right;
+    margin:5px 20px 0px 0px
+}
+
+.footer_links{
+    height:40px;
+    padding:15px 10px 0px 10px;
+    text-align:center;
+    position: relative;
+    float: left;
+    font-size: 18px;
+    color:#E0D6C3;
+}
+.footer_links a{
+    margin-top:8px;
+    padding-right:30px;
+    text-decoration: none ;
+    color:#E0D6C3;
+}
+
+.footer_links a:hover{
+    color:#75ACC0;
+}
+
+
+.about_header{
+    background-color: #C67C5C;
+    height: 80px;
+    text-align: center;
+    border: 1px solid #165153;
+    font-size:20px;
+    padding-bottom:5px;
+}
+.about_text_cont {
+    margin: 20px 0px 20px 0px;
+    display: block;
+    overflow: auto;
+}
+.about_text h1{
+    font-size: 21px;
+    color:#165153;
+    padding:10px;
+}
+.about_text{
+    width:49%;
+    border: 1px solid #165153;
+    text-align: left;
+    float:right;
+    min-height: 350px;
+}
+.about_text p{
+    padding: 0px 20px 0px 20px;
+}
+.about_image {
+    float:left;
+    width: 49%;
+    min-height: 350px;
+    background-image: url(/img/aboutlaw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list_review_cont{
+    margin: 20px 0px 20px 0px;
+    display: block;
+    overflow: auto;
+}
+.about_list{
+    width:49%;
+    border: 1px solid #165153;
+    text-align:left;
+    float:left;
+    min-height:600px;
+}
+.about_list ul{
+    padding:10px;
+    margin:10px;
+}
+.about_list h1{
+    font-size:20px;
+    padding:10px;
+    color:#165153;
+}
+.about_review_cont{
+    width:49%;
+    border: 1px solid #165153;
+    text-align:left;
+    float:right;
+    min-height:600px;
+}
+.about_review_image{
+    width:100%;
+    float:left;
+    min-height:500px;
+    background-image:url("/img/office.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.review_container{
+    border:1px solid #C67C5C;
+    width:100%;
+    min-height:300px;
+    float:left;
+}
+.review_container h1{
+    padding:10px;
+    color:#165153;
+}
+.review_container p{
+    padding:10px;
+}
+.review_container button{
+    margin:10px;
+    object-position: bottom;
+}
+.open_button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    object-position: bottom;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.form_popup {
+    display: none;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+.form_container {
+    max-width: 80%;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+}
+.form_container input[type=text]{
+    width:100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border:none;
+    background:#f1f1f1;
+}
+.form_container textarea{
+    width: 100%;
+    height:300px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+.form-container input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+.form_container .btn {
+    background-color:#165153;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+.form_container .cancel {
+
+}
+.form_container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.team_container{
+    margin: 20px 0px 20px 0px;
+    display: block;
+    overflow: auto;
+}
+.team_container h1{
+    color:#000;
+    font-size:30px;
+    text-align:center;
+    background-color:#C67C5C;
+    padding:10px;
+}
+.team_container p{
+    font-size:20px;
+    padding:10px;
+    float:left;
+    text-align: left;
+
+}
+.team_container_image1{
+    width:100%;
+    float:left;
+    min-height:550px;
+    background-image:url("/img/lawyer-10.jpeg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.team_container_image2{
+    width:100%;
+    float:left;
+    min-height:550px;
+    background-image:url("/img/lawyer-9.jpeg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team_container_image3{
+    width:100%;
+    float:left;
+    min-height:550px;
+    background-image:url("/img/lawyer-7.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team_container_image4{
+    width:100%;
+    float:left;
+    min-height:550px;
+    background-image:url("/img/lawyer-6.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lawyer1{
+    width:24%;
+    min-height:1000px;
+    background-color:#C67C5C;
+    float: left;
+    border: 1px solid #165153;
+    margin-right:10px;
+}
+.lawyer2{
+    width:24%;
+    min-height:1000px;
+    background-color:#C67C5C;
+    float: left;
+    border: 1px solid #165153;
+    margin-right:10px;
+}
+.lawyer3{
+    width:24%;
+    min-height:1000px;
+    background-color:#C67C5C;
+    float: left;
+    border: 1px solid #165153;
+    margin-right:10px;
+}
+.lawyer4{
+    width:24%;
+    min-height:1000px;
+    background-color:#C67C5C;
+    float: left;
+    border: 1px solid #165153;
+}
