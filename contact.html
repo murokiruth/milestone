@@ -1,77 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>Law Firm Marketing Website-HomePage</title>
-<link href="/css/style.css" rel="stylesheet">
+<link href="/css/contactstyle.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins:300|Playfair+Display:400,700" rel="stylesheet">
 </head>
 <body>
-<style>
-.contact_cont {
-display: block;
-overflow: auto;
-background-image: url("/img/map.jpg");
-position:relative;
-}
-.contact_details{
-display:block;
-background-color: #E0D6C3  ;
-padding:10px;
-margin: 5px;
-font-weight:bold;
-text-align: center;
-position:relative;
-}
-.contact_us_image{
-width:30%;
-min-height:500px;
-text-align:center;
-float: left;
-margin:5px;
-background-image: url("/img/laptop.jpg");
-background-repeat: no-repeat;
-background-position: right;
-background-size: cover;
 
-}
-.c_contact_form{
-display:block;
-width:30%;
-text-align: left;
-float: left;
-border: 1px solid #165153;
-margin:5px;
-padding: 10px;
-font-weight:bold;
-background-color: #C67C5C;
-}
-.contact_image{
-width:35%;
-min-height:500px;
-text-align: center;
-float:left;
-margin:10px;
-background-image: url("/img/phone.jpg");
-background-position:center;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-a[href^="mailto"]::before {
-    content: "📧 ";
-}
-
-a[href^="tel"]::before {
-    content: "📞 ";
-}
-.contact_details p{
-    text-align:center;
-    font-family: 'Playfair Display', Serif;
-    text-transform:uppercase;
-    font-size:25px;
-}
-</style>
 <header>
     <div class="logo"></div>
     <div class="logo_text">Sonexx Law Firm</div>
@@ -83,44 +19,42 @@ a[href^="tel"]::before {
     </div>
 </header>
 
-<div class="contact_cont">
+<div class="contact_body">
     <div class="contact_details">
-            <p>Get In Touch with our skilled team of attorneys</p>
-            <address>
-                <phone>Phone:
-                    <a href="tel:+(1)555-666-7878">+(1)555-666-7878</a>
-                </phone><br>
-                <email>Email:
-                    <a href="mailto:info@sonexxlawfirm.com">info@sonexxlawfirm.com</a>
-                </email><br>
-                <a>
-                    Address:
-                    P.O. BOX 41
-                    Dallas, TX 75287
-                </a>
-            </address>
-    </div>
-</div>
-
-<div class="contact_cont">
-
-    <div class="contact_us_image">
+        <p>Get In Touch with our skilled team of attorneys</p>
+        <ul>
+            <li>Phone:
+                <a href="tel:+(1)555-666-7878">+(1)555-666-7878</a>
+            </li>
+            <li>Email:
+                <a href="mailto:info@sonexxlawfirm.com">info@sonexxlawfirm.com</a>
+            </li>
+            <li>
+                Address:
+                P.O. BOX 41
+                Dallas, TX 75287
+            </li>
+        </ul>
     </div>
 
-    <div class="c_contact_form">
-        <h1>Contact us</h1>
-        <form action="">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" size="50" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" size="50" value="Doe"><br>
-            <label for="message">Message:</label><br>
-            <input type="text" id="message" name="message" placeholder="write your message..." size="50" style="height:500px"><br>
-            <input type="submit" value="Submit"><br>
-        </form>
-    </div>
+    <div class="contact_cont">
+        <div class="contact_us_image"></div>
 
-    <div class="contact_image"></div>
+        <div class="c_contact_form">
+            <h1>Contact us</h1>
+            <form action="/">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="write your message..." style="height:500px"></textarea><br>
+                <input type="submit" value="Submit"><br>
+            </form>
+        </div>
+
+        <div class="contact_image"></div>
+    </div>
 </div>
 
 <footer>
